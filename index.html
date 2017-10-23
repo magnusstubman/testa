@@ -6,7 +6,15 @@
 <script>
 setTimeout(function () {
     document.getElementById('a').play();
-
 }, 500);
+
+function bb() {
+    var a = document.getElementById('a');
+    if (!a.paused) {
+        a.pause();
+    } else {
+        a.play();
+    }
+}
 </script>
-<button onclick="document.getElementById('a').play()" style="height: 100%; width: 100%;" >Play!</button>
+<button onclick="bb()" style="height: 100%; width: 100%;" >Play/Pause</button>
